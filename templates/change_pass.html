@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <div class="container" style="margin-top: 30px;">
+    <form action="" method="POST">
+      {% csrf_token %}
+      {{form.as_p}}
+      {% comment %} <fieldset class="form-group">
+          <legend class="border-bottom mb-4" style="color: white;">Change Password</legend>
+      </fieldset> {% endcomment %}
+          <button class="btn btn-secondary">Change Password</button>
+    </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,23 @@
+
+
+<form action="" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+   
+    <div class="mb-3">
+        <label for="" class="form-label">Image</label>
+        <input type="file" Required name="image" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Course</label>
+        <input type="text" Required name="course" class="form-control">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+
+
+
+
+
